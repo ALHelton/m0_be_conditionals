@@ -22,83 +22,117 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
+puts number_teachers < number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
+puts number_teachers == string_teachers
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
+puts number_teachers != number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
+number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
+puts number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
+puts number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
+puts number_students <= 21
 # this should print: true
 
 
-#-------------------
-# PART 2: Articulating what you are doing
-#-------------------
+# #-------------------
+# # PART 2: Articulating what you are doing
+# #-------------------
 
-# For the following prompts, you will be given a line of code and your task is to type out a Comment,
-# in English, explaining what that line of code is doing, including what the comparison will evaluate to.
-# Be as technically precise as possible, but don't just copy and paste a definition from the readings.
-# Make sure YOU can explain it that way!
+# # For the following prompts, you will be given a line of code and your task is to type out a Comment,
+# # in English, explaining what that line of code is doing, including what the comparison will evaluate to.
+# # Be as technically precise as possible, but don't just copy and paste a definition from the readings.
+# # Make sure YOU can explain it that way!
 
-puts 4 < 9
-#YOU DO: Explain.
+# puts 4 < 9
+# #YOU DO: Explain.
+'''
+The conditional statement states the integer 4 is less than the integer 9. 
+This statement is true.
+'''
 
-books = 3
-puts 4 < books
-# YOU DO: Explain.
+# books = 3
+# puts 4 < books
+# # YOU DO: Explain.
+'''
+The books variable is 3. 
+The conditional statement states the integer 4 is less than the books variable 3. 
+This statement is false.
+'''
 
-friends = 6
-siblings = 2
-puts friends > siblings
-# YOU DO: Explain.
+# friends = 6
+# siblings = 2
+# puts friends > siblings
+# # YOU DO: Explain.
+'''
+The friends variable is 6. 
+The siblings variable is 2. 
+The conditional statement states the friends variable is greater than the siblings variable.
+This statement is true.
+'''
 
-attendees = 9
-meals = 8
-puts attendees != meals
-# YOU DO: Explain.
+# attendees = 9
+# meals = 8
+# puts attendees != meals
+# # YOU DO: Explain.
+'''
+The attendees variable is 9.
+The meals variable is 8.
+The conditional statement states the attendees variable does not equal the meals variable.
+This statement is true.
+'''
 
 
-#-------------------
-# PART 3: Logical Operators
-#-------------------
+# #-------------------
+# # PART 3: Logical Operators
+# #-------------------
 
-is_hungry = true
-finished_homework = false
+# is_hungry = true
+# finished_homework = false
 
-# EXAMPLE:
-# Determine if the user is hungry and has completed their homework
-puts is_hungry && finished_homework
-# Determine if the user is hungry or has completed their homework
-puts is_hungry || finished_homework
+# # EXAMPLE:
+# # Determine if the user is hungry and has completed their homework
+# puts is_hungry && finished_homework
+# # Determine if the user is hungry or has completed their homework
+# puts is_hungry || finished_homework
 
 loves_to_play = true
 loves_dog_park = false
 loves_treats = true
 age = 1
 
-# YOU DO:
-# Determine if the dog loves to play and loves treats
+# # YOU DO:
+# # Determine if the dog loves to play and loves treats
+puts loves_to_play && loves_treats
 
+# # Determine if the dog loves to play and loves the dog park
+puts loves_to_play && loves_dog_park
 
-# Determine if the dog loves to play and loves the dog park
+# # Determine if the dog loves to play or loves the dog park
+puts loves_to_play || loves_dog_park
 
+# # Determine if the dog loves to play and is a puppy
+puts loves_to_play && (age < 1)
 
-# Determine if the dog loves to play or loves the dog park
-
-
-# Determine if the dog loves to play and is a puppy
-
-# What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# # What did your final line of code evaluate to? Why do you think that is? Explain.
+# # ANSWER: 
+'''
+The age variable equals 1.
+If the definition of a puppy is less than 1, the dog is no longer a puppy. This boolean is false.
+The first boolean is true, the second is false.
+The answer is false because both booleans need to be true according to the logic operator &&.
