@@ -136,3 +136,4 @@ The age variable equals 1.
 If the definition of a puppy is less than 1, the dog is no longer a puppy. This boolean is false.
 The first boolean is true, the second is false.
 The answer is false because both booleans need to be true according to the logic operator &&.
+'''
